@@ -55,20 +55,17 @@
 
       <address class="address">
         <div class="address__info">
-          <p>
             <a
               class="address__link"
-              href="tel:+9 999 555 5555">
+              href="tel:+99995555555">
               +9 999 555 5555
             </a>
-          </p>
-          <p>
+            <br>
             <a
               class="address__link"
               href="mailto:info@sobaka.ge">
               info@sobaka.ge
             </a>
-          </p>
           <p>
             наб. Принсенграхт 263-265, <br>
             Амстердам
@@ -80,13 +77,11 @@
 
     <main class="main">
 
-      <section class="cover__image">
+      <section class="cover cover__image">
+
         <div class="cover__image-opacity"></div>
-      </section>
 
-      <section class="cover__title">
-
-        <div class="letters-on-cover">
+        <h1 class="letters-on-cover">
 
           <span class="accent-span text-left">
             он <span class="spacing-left">о</span>
@@ -102,23 +97,19 @@
             <span class="text-right-four">о</span>
           </span>
 
-        </div>
+        </h1>
 
         <div class="cover__bottom-section">
 
-          <div class="phrase-title">
-            <h2 class="phrase-text">
+            <p class="phrase-text">
               Аукцион вещей, в которые никто не верил
-            </h2>
-          </div>
+            </p>
 
-          <div class="button">
             <div class="button__container">
-              <button class="button__text">
+              <button class="button__text" type="button">
                 Сделать ставку
               </button>
             </div>
-          </div>
 
         </div>
 
@@ -141,7 +132,28 @@
                     <h3 class="card__title">
                       Фильм режиссёра, который бросил киношколу
                     </h3>
-                    <p class="card__text text__accent-film">
+                    <p class="card__text text__accent-film"> 
+                      
+                      <!-- Сергей, здравствуйте. Вы предложили убрать классы 
+                      .text__accent-film, 
+                      .text__accent-book,
+                      .text__accent-picture 
+                      и использовать свойства флекс для контейнера cover__image-opacity
+                      я попробывал сделать отдельный класс чтобы не вкладывать путающие значения в
+                      cover__image-opacity, ведь этот класс я использую для cover. 
+                      Но в этом случае, мой заголовок третьего уровня также реагирует на свойства флекс
+                      если установить для всех карточек:
+
+                      text__accent {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: end;
+                      }
+                      
+                      Поэтому я оставил, все как есть.
+                    -->
+
                       Не просто бросил, а ушёл с первой лекции. Какой была бы
                       ваша ставка, если бы вы не знали, что режиссёр — Пол Томас
                       Андерсон?
@@ -179,7 +191,7 @@
                 class="card__link"
                 href="#">
                 <article class="card card__type-picture">
-                  <div class="cover__image-opacity">
+                  <div class="cover__image-opacity text__acent">
                     <h3 class="card__title">
                       Картина, которую повторит даже 5-летний сын маминой
                       подруги
@@ -201,7 +213,7 @@
           <div class="lots__look-more">
             <a
               class="lots__look-more-link"
-              href>
+              href="#">
               посмотреть больше
             </a>
           </div>
@@ -210,18 +222,21 @@
 
       </section>
 
-      <section class="about">
+      <div class="about">
 
         <div class="about__logo">
-          <div class="about__logo-image"></div>
+          <img 
+              class="about__logo-image"
+              src="../ono-tebe-nado/images/logo-white.svg" alt="Белый логотип 'Оно тебе надо'"
+            >
         </div>
 
         <section class="about__column">
 
           <div class="about__title">
-            <h4>
+            <h2>
               Об аукционе
-            </h4>
+            </h2>
           </div>
 
           <div class="about__text">
@@ -245,42 +260,42 @@
 
         </section>
 
-      </section>
+      </div>
 
     </main>
 
     <footer class="footer">
 
-      <section class="footer__address">
+      <div class="footer__address">
 
         <!-- Блок адресс идентичен блоку адресс в шапке страницы -->
 
         <address class="address">
 
           <div class="address__info">
-            <p>
+            
               <a
                 class="address__link"
-                href="tel:+9 999 555 5555">
+                href="tel:+99995555555">
                 +9 999 555 5555
               </a>
-            </p>
-            <p>
+              <br>
               <a
                 class="address__link"
                 href="mailto:info@sobaka.ge">
                 info@sobaka.ge
               </a>
-            </p>
+
             <p>
               наб. Принсенграхт 263-265, <br>
               Амстердам
             </p>
+
           </div>
 
         </address>
 
-      </section>
+      </div>
 
       <nav class="footer__menu">
 
@@ -309,7 +324,8 @@
         </ul>
       </nav>
 
-      <div class="social">
+      <div class="social"> 
+        <!-- Как тогда отцентрировать этот блок без .social? -->
         <ul class="footer__social-list">
           <li class="footer__social-list-item">
             <a
