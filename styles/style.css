@@ -165,7 +165,7 @@
 
 .cover__bottom-section {
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-content: end;
 }
 
@@ -175,7 +175,8 @@
   font-weight: 400;
   line-height: 28px;
   text-transform: uppercase;
-  max-width: 633px;
+  width: 633px;
+  height: 28px;
   word-spacing: 17.4px;
   margin: 147px 79px 62px 371px;
 }
