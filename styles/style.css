@@ -164,9 +164,11 @@
 }
 
 .cover__bottom-section {
+  min-height: 237px;
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: auto auto;
   justify-content: end;
+  gap: 80px;
   position: relative;
   z-index: 1;
 }
@@ -177,15 +179,12 @@
   font-weight: 400;
   line-height: 28px;
   text-transform: uppercase;
-  max-width: 633px;
   word-spacing: 17.4px;
-  margin: 147px 0 0 423px;
+  margin-top: 147px;
 }
 
-/* Я все сделал */
-
 .button__container {
-  margin: 135px 50px 50px 0px;
+  margin: 135px 50px 0 0;
   border: 1px solid #fff;
   width: 257px;
   height: 52px;
