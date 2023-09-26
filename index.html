@@ -79,39 +79,41 @@
 
       <section class="cover cover__image">
 
-        <div class="cover__image-opacity"></div>
+        <div class="overlay"></div> 
 
-        <h1 class="letters-on-cover">
+          <!-- Сергей, я проконсультироваося по поводу overlay. И старший студент указал, что необходимо
+            использовать именно position: absolute  -->
 
-          <span class="accent-span text-left">
-            он <span class="spacing-left">о</span>
-          </span>
+          <h1 class="letters-on-cover">
 
-          <span class="accent-span text-center">
-            теб <span class="spacing-center">е</span>
-          </span>
+            <span class="accent-span text-left">
+              он <span class="spacing-left">о</span>
+            </span>
 
-          <span class="accent-span text-right">
-            н <span class="text-right-two">а</span>
-            <span class="text-right-three">д</span>
-            <span class="text-right-four">о</span>
-          </span>
+            <span class="accent-span text-center">
+              теб <span class="spacing-center">е</span>
+            </span>
 
-        </h1>
+            <span class="accent-span text-right">
+              н <span class="text-right-two">а</span>
+              <span class="text-right-three">д</span>
+              <span class="text-right-four">о</span>
+            </span>
 
-        <div class="cover__bottom-section">
+          </h1>
 
-            <p class="phrase-text">
-              Аукцион вещей, в которые никто не верил
-            </p>
+          <div class="cover__bottom-section">
 
-            <div class="button__container">
-              <button class="button__text" type="button">
-                Сделать ставку
-              </button>
-            </div>
+              <p class="phrase-text">
+                Аукцион вещей, в которые никто не верил
+              </p>
 
-        </div>
+              <div class="button__container">
+                <button class="button__text" type="button">
+                  Сделать ставку
+                </button>
+              </div>
+          </div>
 
       </section>
 
@@ -128,32 +130,11 @@
                 class="card__link"
                 href="#">
                 <article class="card card__type-film">
-                  <div class="cover__image-opacity">
+                  <div class="overlay">
                     <h3 class="card__title">
                       Фильм режиссёра, который бросил киношколу
                     </h3>
                     <p class="card__text text__accent-film"> 
-                      
-                      <!-- Сергей, здравствуйте. Вы предложили убрать классы 
-                      .text__accent-film, 
-                      .text__accent-book,
-                      .text__accent-picture 
-                      и использовать свойства флекс для контейнера cover__image-opacity
-                      я попробывал сделать отдельный класс чтобы не вкладывать путающие значения в
-                      cover__image-opacity, ведь этот класс я использую для cover. 
-                      Но в этом случае, мой заголовок третьего уровня также реагирует на свойства флекс
-                      если установить для всех карточек:
-
-                      text__accent {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: end;
-                      }
-                      
-                      Поэтому я оставил, все как есть.
-                    -->
-
                       Не просто бросил, а ушёл с первой лекции. Какой была бы
                       ваша ставка, если бы вы не знали, что режиссёр — Пол Томас
                       Андерсон?
@@ -168,7 +149,7 @@
                 class="card__link"
                 href="#">
                 <article class="card card__type-book">
-                  <div class="cover__image-opacity">
+                  <div class="overlay">
                     <h3 class="card__title">
                       Книга, где описан один скучный день из жизни рекламного
                       агента
@@ -191,7 +172,7 @@
                 class="card__link"
                 href="#">
                 <article class="card card__type-picture">
-                  <div class="cover__image-opacity text__acent">
+                  <div class="overlay">
                     <h3 class="card__title">
                       Картина, которую повторит даже 5-летний сын маминой
                       подруги
@@ -229,6 +210,22 @@
               class="about__logo-image"
               src="../ono-tebe-nado/images/logo-white.svg" alt="Белый логотип 'Оно тебе надо'"
             >
+
+            <!-- 
+              
+              Сергей, здравствуйте. Я получил ваш скрин об ошибках в этом блоке.
+              И сделал дабл чек консоли. Но, моя консоль абсолютно чиста. И нет, никаких ошибок. 
+              Я прошу прощения, за настойчивость. Я очень ответсвенно следовал Вашим указаниям.
+              Что я сделал: 
+              1. Проверил консоль в таких браузерах как - Google Chrome, Mozilla Firefox, Yandex Browser.
+              2. Проверил путь логотипа в HTML разметке. 
+                  В Вашей консоли было указано, что файл не найден.
+              3. Проверил наличие логотипа в папке images на github.
+
+              Но, все корректно.
+
+            -->
+
         </div>
 
         <section class="about__column">
