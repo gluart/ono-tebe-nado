@@ -84,7 +84,7 @@
 .cover__image {
   min-width: 1100px;
   max-width: 1440px;
-  max-height: 758px; 
+  min-height: 758px; 
   margin: auto;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
@@ -93,7 +93,7 @@
   position: relative;
   left: 0;
   right: 0;
-  z-index: -2;
+  z-index: 0;
 }
 
 .overlay {
@@ -181,6 +181,8 @@
   word-spacing: 17.4px;
   margin: 147px 79px 62px 371px;
 }
+
+/*  Я прошу прощения, но если я устанавлиываю max-width, этот абзац начинает скапливаться под собой и не выстраивается в строку. Даже если когда-то здесь будет другой текст, он будет корректно отображаться при нынишних свойствах. Высота будет наполняться контентом */
 
 .button__container {
   margin: 135px 50px 50px 0px;

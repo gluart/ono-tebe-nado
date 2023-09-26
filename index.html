@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="shortcut icon" href="../ono-tebe-nado/images/logo-white.svg"
+    <link rel="shortcut icon" href="./images/logo-white.svg"
       type="image/x-icon">
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
@@ -106,7 +106,14 @@
                 </p>
 
                 <div class="button__container">
-                  <button class="button__text" type="button">
+                  <button class="button__text" type="button" onclick="alert('click')"> 
+                    
+                    <!--
+                      Очень интересно, ведь я считал, что image это самый нижний слой и поэтому у него должен быть отрицательный индекс. Далее overlay - 0, и текст - 1.
+
+                      onclick="alert('click')" - очень полезный способ теста.
+                    -->
+
                     Сделать ставку
                   </button>
                 </div>
@@ -203,24 +210,8 @@
         <div class="about__logo">
           <img 
               class="about__logo-image"
-              src="../ono-tebe-nado/images/logo-white.svg" alt="Белый логотип 'Оно тебе надо'"
+              src="./images/logo-white.svg" alt="Белый логотип 'Оно тебе надо'"
             >
-
-            <!-- 
-              
-              Сергей, здравствуйте. Я получил ваш скрин об ошибках в этом блоке.
-              И сделал дабл чек консоли. Но, моя консоль абсолютно чиста. И нет, никаких ошибок. 
-              Я прошу прощения, за настойчивость. Я очень ответсвенно следовал Вашим указаниям.
-              Что я сделал: 
-              1. Проверил консоль в таких браузерах как - Google Chrome, Mozilla Firefox, Yandex Browser.
-              2. Проверил путь логотипа в HTML разметке. 
-                  В Вашей консоли было указано, что файл не найден.
-              3. Проверил наличие логотипа в папке images на github.
-
-              Но, все корректно.
-
-            -->
-
         </div>
 
         <section class="about__column">
@@ -317,7 +308,6 @@
       </nav>
 
       <div class="social"> 
-        <!-- Как тогда отцентрировать этот блок без .social? -->
         <ul class="footer__social-list">
           <li class="footer__social-list-item">
             <a
