@@ -165,7 +165,7 @@
 
 .cover__bottom-section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 5fr 1fr;
   justify-content: end;
   position: relative;
   z-index: 1;
@@ -179,10 +179,10 @@
   text-transform: uppercase;
   min-width: 633px;
   word-spacing: 17.4px;
-  margin: 147px 79px 62px 371px;
+  margin: 147px 0 0 423px;
 }
 
-/*  Я прошу прощения, но если я устанавлиываю max-width, этот абзац начинает скапливаться под собой и не выстраивается в строку. Даже если когда-то здесь будет другой текст, он будет корректно отображаться при нынишних свойствах. Высота будет наполняться контентом */
+/* Я все сделал */
 
 .button__container {
   margin: 135px 50px 50px 0px;
