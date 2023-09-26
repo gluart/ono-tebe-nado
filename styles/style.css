@@ -295,7 +295,7 @@
   max-width: 1440px;
   margin: auto;
   display: flex;
-  margin: 0px 50px 180px 50px;
+  padding: 0px 50px 180px 50px;
 }
 
 .about__logo {
